@@ -1,0 +1,23 @@
+<div>
+  <app-header [fruitsArray]="fruits" (sendInfo)="clicktedElement($event)"></app-header>
+</div>
+<div class="container">
+  <div class="left-container">
+    <h3 class="header">My basket : </h3>
+    <div class="left">
+      <div class="fruits" *ngFor="let f of selectedFruits">
+        <img src="{{f.image}}">
+      </div>
+    </div>
+  </div>
+
+  <div class="right-container">
+    <h3 class="header">Price List :</h3>
+    <div class="right">
+      <div class="products" *ngFor="let f of selectedFruits">
+        <p><strong>Product name: </strong>{{f.name}} ~ <strong>Price: </strong> {{f.price}} $</p>
+      </div>
+    </div>
+    <p class="sum"><strong>Sum : </strong>{{sum}} $</p>
+  </div>
+</div>
