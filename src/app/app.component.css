@@ -58,12 +58,12 @@ img:hover{
 }
 
 p{
-  text-transform: capitalize;
   color: rgba(0, 0, 0, 0.849);
   line-height: 0px;
   text-align: center;
   padding-left: 35px;
 }
+
 
 .sum{
     position: absolute;

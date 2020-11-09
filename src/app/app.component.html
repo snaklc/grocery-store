@@ -6,7 +6,7 @@
     <h3 class="header">My basket : </h3>
     <div class="left">
       <div class="fruits" *ngFor="let f of selectedFruits">
-        <img src="{{f.image}}">
+        <img src="{{f.image}}"><p>x{{f.number}}</p>
       </div>
     </div>
   </div>
@@ -15,7 +15,7 @@
     <h3 class="header">Price List :</h3>
     <div class="right">
       <div class="products" *ngFor="let f of selectedFruits">
-        <p><strong>Product name: </strong>{{f.name}} ~ <strong>Price: </strong> {{f.price}} $</p>
+        <p><strong>Product Name: </strong>{{f.name}}  x{{f.number}} ~ <strong>Price: </strong> {{f.price*f.number}} $</p>
       </div>
     </div>
     <p class="sum"><strong>Sum : </strong>{{sum}} $</p>
